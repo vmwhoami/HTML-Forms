@@ -1,0 +1,28 @@
+body{
+    background-color: #eceef1;;
+}
+.main-container{
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.head-container{
+    display: flex;
+    align-self: flex-end;
+    flex-flow: row nowrap;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-family: ;
+}
+.form-container{
+    width: 316px;
+    height: 610px;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid black;
+}
