@@ -24,5 +24,39 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     padding: 30px;
-    border: 1px solid black;
+    border: 1px solid #c7c7c7;
+}
+
+/* Style the icons */
+.icons{
+    height: 23px;
+    width: 23px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50%;
+    margin: 2px;
+}
+.logo-header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+.logo-center{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-writing{
+    margin-right: 5px;
+}
+.intuit{
+    width: 118px;
+    height: 35px;
+}
+.lock{
+    width: 10px;
+    height: 10px;
+    
 }
