@@ -92,9 +92,9 @@ cursor: pointer;
     word-spacing: 1px;
     padding: 20px;
 }
-/* form p {
-font-size: 10px;
-} */
+.standard-call{
+    font-size: 12px;
+}
 .form-footer{
     padding: 16px;
     background-color:rgb(236, 238, 241);
@@ -162,7 +162,7 @@ form{
 }
 .input-field{
     padding: 0 6px 0 8px;
-    width: 100%;
+    width: 320px;
     height: 34px;
     border-radius: 3px;
     border: 1px solid #c7c7c7;
@@ -207,4 +207,7 @@ text-align: center;
 
 .a-blue{
     color: #0077C5;
+}
+.form-font{
+    color: rgb(68, 68, 68);
 }
