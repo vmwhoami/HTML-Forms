@@ -1,5 +1,6 @@
 body{
-    background-color: #eceef1;;
+    background-color: #eceef1;
+    line-height: 1.5em;
 }
 .main-container{
     display: flex;
@@ -14,7 +15,7 @@ body{
     flex-flow: row nowrap;
     padding: 10px 30px;
     font-size: 12px;
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .form-container{
     width: 316px;
@@ -25,6 +26,56 @@ body{
     align-items: center;
     padding: 30px;
     border: 1px solid #c7c7c7;
+}
+p:nth-child(1){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding-top: 5px;
+}
+p:nth-child(2){
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
+p:nth-of-type(3)
+{
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(117, 117, 117);
+    text-indent: 1.5em;
+    word-spacing: 1px;
+    padding: 20px;
+}
+.form-footer{
+    
+    background-color:rgb(236, 238, 241);
+    width: 100%;
+}
+p:last-child{
+    text-align: center;
+    
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+}
+a{
+    text-decoration: none;   
+}
+.learn-more{
+    font-size: 12px;
+    text-decoration: none;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.create-account{
+    font-size: 20px;
+    color:white;
+    background-color:#0077C5;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 6px 12px 6px 12px;
 }
 
 /* Style the icons */
@@ -47,6 +98,25 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+}
+form{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.form-label{
+    text-align: left;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 6px;
+    box-sizing: border-box;
+}
+.input-field{
+    padding: 0 6px 0 8px;
+    height: 34px;
+    font-weight: 34px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+    
 }
 .logo-writing{
     margin-right: 5px;
