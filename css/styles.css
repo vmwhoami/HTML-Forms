@@ -2,6 +2,7 @@ body{
     background-color: #eceef1;
     line-height: 1.5em;
 }
+
 .consent{
     position: fixed;
     bottom: 0px;
@@ -207,6 +208,7 @@ text-align: center;
 
 .a-blue{
     color: #0077C5;
+    cursor: pointer;
 }
 .form-font{
     color: rgb(68, 68, 68);
