@@ -2,6 +2,22 @@ body{
     background-color: #eceef1;
     line-height: 1.5em;
 }
+.consent{
+    position: fixed;
+    bottom: 0px;
+    right: 5%;
+    background-color:#6B6C72 ;
+    padding: 10px 12px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.consent :first-child{
+    color: white;
+    font-size: 14px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .main-container{
     display: flex;
     flex-flow: column nowrap;
@@ -13,13 +29,40 @@ body{
     display: flex;
     align-self: flex-end;
     flex-flow: row nowrap;
-    padding: 10px 30px;
+    margin: 10px 30px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.sign-in-section{
+    padding-right: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.sign-in-section p:first-child {
+font-size: 12px;
+line-height: 0;
+justify-self: center;
+}
+.sign-in-section a{
+ font-size: 12px;
+line-height: 0;
+color: #0077C5;
+align-self: center;
+
+
+}
+.signin-btn{
+border-radius: 4px;
+border: 1px solid #4c4c4c;
+color: white;
+background-color:#0077C5 ;
+height: 34px;
+padding: 0 20px;
+}
+/*-------------- Form styling---------- */
 .form-container{
     width: 316px;
-    height: 610px;
     background-color: white;
     display: flex;
     flex-flow: column nowrap;
@@ -27,17 +70,17 @@ body{
     padding: 30px;
     border: 1px solid #c7c7c7;
 }
-p:nth-child(1){
+.form-container p:nth-child(1){
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     padding-top: 5px;
 }
-p:nth-child(2){
+.form-container p:nth-child(2){
     text-align: center;
     font-size: 14px;
     padding-top: 20px;
 }
-p:nth-of-type(3)
+.form-container p:nth-of-type(3)
 {
     text-align: center;
     font-size: 14px;
@@ -47,16 +90,19 @@ p:nth-of-type(3)
     word-spacing: 1px;
     padding: 20px;
 }
+/* form p {
+font-size: 10px;
+} */
 .form-footer{
-    
+    padding: 16px;
     background-color:rgb(236, 238, 241);
-    width: 100%;
+    margin: 32px -30px -30px -30px;
 }
-p:last-child{
+.form-container p:last-child{
     text-align: center;
-    
-    font-size: 14px;
+    font-size: 10px;
     color: rgb(117, 117, 117);
+    padding: 0px 30px 0px 30px;
 }
 a{
     text-decoration: none;   
@@ -64,7 +110,6 @@ a{
 .learn-more{
     font-size: 12px;
     text-decoration: none;
-    color: blueviolet;
     font-family: Arial, Helvetica, sans-serif;
 }
 .create-account{
@@ -78,7 +123,7 @@ a{
     padding: 6px 12px 6px 12px;
 }
 
-/* Style the icons */
+/*       ------Style  icons above the form  -------   */
 .icons{
     height: 23px;
     width: 23px;
@@ -112,11 +157,10 @@ form{
 }
 .input-field{
     padding: 0 6px 0 8px;
+    width: 100%;
     height: 34px;
-    font-weight: 34px;
     border-radius: 3px;
     border: 1px solid #c7c7c7;
-    
 }
 .logo-writing{
     margin-right: 5px;
@@ -129,4 +173,33 @@ form{
     width: 10px;
     height: 10px;
     
+}
+
+/*-------------------- Footer styling------------------ */
+
+.footer-links{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    color: #505050;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.footer-paragraph {
+text-align: center;
+ font-size:14px ;
+ color: #505050;
+}
+
+.a-blue{
+    color: #0077C5;
 }
