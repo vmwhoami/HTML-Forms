@@ -234,3 +234,9 @@ form {
 .form-font {
   color: rgb(68, 68, 68);
 }
+
+.lock-img{
+  background: url(/resources/lock.png) no-repeat 0% 50% / 21px 21px;
+  background-position: 95%;
+  /* padding-right: 10px; */
+}
