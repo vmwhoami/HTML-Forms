@@ -4,16 +4,6 @@ body {
   line-height: 1.5em;
 }
 
-.consent {
-  position: fixed;
-  bottom: 0;
-  right: 5%;
-  background-color: #6b6c72;
-  padding: 10px 12px;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-}
 a {
   text-decoration: none;
 }
@@ -52,6 +42,7 @@ a {
   font-size: 12px;
   line-height: 0;
   justify-self: center;
+  color: #505050;
 }
 
 .sign-in-section a {
@@ -89,6 +80,8 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   padding-top: 5px;
+  line-height: 1.1em;
+  color: #4C4C4C;
 }
 
 .form-container p:nth-child(2) {
@@ -99,7 +92,8 @@ a {
 
 .form-container p:nth-of-type(3) {
   text-align: center;
-  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   font-style: italic;
   color: rgb(117, 117, 117);
   text-indent: 1.5em;
@@ -109,6 +103,7 @@ a {
 
 .standard-call {
   font-size: 12px;
+  margin: -30px 0 30px 0;
 }
 
 .form-footer {
@@ -141,7 +136,6 @@ a {
   height: 44px;
   border: none;
   border-radius: 4px;
-  margin-top: 30px;
   padding: 6px 12px 6px 12px;
   cursor: pointer;
 }
@@ -189,6 +183,7 @@ form {
   height: 34px;
   border-radius: 3px;
   border: 1px solid #c7c7c7;
+  margin-bottom: 30px;
 }
 
 .logo-writing {
