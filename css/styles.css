@@ -1,3 +1,7 @@
+:root {
+  --error: #db3030;
+}
+
 body {
   background-color: #eceef1;
   line-height: 1.5em;
@@ -240,10 +244,16 @@ form {
 }
 
 .input-field.error {
-  border: 2px solid #db3030;
+  border: 2px solid var(--error);
 }
-
-.input-field + small {
-  color: #db3030;
+.form_field {
+  position: relative;
+}
+.form_field > small {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--error);
+  position: absolute;
+  bottom: 0;
+  left: 0;
   visibility: hidden;
 }
