@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="/resources/favicon-196x196.png" type="image/x-icon">
     <title>HTML form</title>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -44,12 +45,15 @@
             <form action="#" method="POST">
                 <label class="form-label form-font" for="email">Email Address</label>
                 <input class="input-field " type="email" name="email" id="email">
+                <small>Error message</small>
                 <label class="form-label form-font" for="number">Phone (recommended)</label>
-                <input class="input-field " type="tel" name="phone" id="number">
+                <input class="input-field success " type="tel" name="phone" id="number">
+                <small>Error message</small>
                 <p class="standard-call form-font"> Standard call, messaging or data rates may apply.
                 </p>
                 <label class="form-label form-font" for="password">Password</label>
                 <input class="input-field lock-img" type="password" name="password" id="password">
+                <small>Error message</small>
                 <button type="submit" class="create-account"> <img class="lock" src="resources/lock.svg" alt="">
                     Create Account</button>
             </form>
