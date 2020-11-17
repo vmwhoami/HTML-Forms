@@ -239,11 +239,11 @@ form {
   background: url(/resources/lock.png) no-repeat 0% 50% / 21px 21px;
   background-position: 95%;
 }
-.input-field.success {
+.form_field.success input {
   border: 2px solid #28b168;
 }
 
-.input-field.error {
+.form_field.error input {
   border: 2px solid var(--error);
 }
 .form_field {
