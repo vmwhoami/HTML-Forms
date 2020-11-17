@@ -25,11 +25,37 @@ function showSucces(input){
 /**************************
   Check email validity 
  **************************/
-function isValidEmail(email)
+function isValidEmail(input)
 {
   const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
+  if (re.test(input.value.trim())){
+    showSucces(input)
+  }else{
+    showError(input, `Email is not valid` )
+  }
 }
+
+/**************************
+  Check presence
+ **************************/
+function checkPresence(arr){
+
+  arr.forEach(item => {
+ 
+    if(item.value === ""){
+      showError(item, `${capItemId(item)} must pe present` )
+    }else{
+      showSucces(item)
+    }    
+  });
+
+}
+
+function capItemId(input){
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1)
+}
+
+
 
 
 /**************************
@@ -38,26 +64,6 @@ function isValidEmail(email)
 form.addEventListener("submit",function(e){
   e.preventDefault();
   
-  if(email.value === ""){
-    showError(email,"Email is required");
-  }
-  else if(!isValidEmail(email.value)) {
-    showError(email,"Email is not valid");
-
-  }else{
-    showSucces(email)
-  }
-
-  if(number.value === ""){
-    showError(number,"Number is required");
-  }else{
-    showSucces(number)
-  }
-
-  if(password.value === ""){
-    showError(password,"Password is required");
-  }else{
-    showSucces(password)
-  }
-
+ checkPresence([email,number,password]);
+ isValidEmail(email)
 });
