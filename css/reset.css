@@ -1,4 +1,3 @@
-
 html,
 body,
 div,
@@ -84,7 +83,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -121,7 +120,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
 

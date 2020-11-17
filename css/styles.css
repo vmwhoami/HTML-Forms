@@ -10,6 +10,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .consent :first-child {
   color: white;
   font-size: 14px;
@@ -72,7 +73,7 @@ a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 30px 30px 0px 30px;
+  padding: 30px 30px 0 30px;
   border-top: 1px solid #c7c7c7;
   border-left: 1px solid #c7c7c7;
   border-bottom: none;
@@ -110,7 +111,6 @@ a {
 }
 
 .form-footer {
-  padding: 16px;
   background-color: rgb(236, 238, 241);
   width: 316px;
   padding: 15px 30px;
@@ -239,6 +239,7 @@ form {
   background: url(/resources/lock.png) no-repeat 0% 50% / 21px 21px;
   background-position: 95%;
 }
+
 .form_field.success input {
   border: 2px solid #28b168;
 }
@@ -246,9 +247,11 @@ form {
 .form_field.error input {
   border: 2px solid var(--error);
 }
+
 .form_field {
   position: relative;
 }
+
 .form_field small {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--error);
@@ -257,6 +260,7 @@ form {
   left: 0;
   visibility: hidden;
 }
+
 .form_field.error small {
   visibility: visible;
 }
