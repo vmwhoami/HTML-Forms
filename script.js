@@ -55,15 +55,35 @@ function capItemId(input){
   return input.id.charAt(0).toUpperCase() + input.id.slice(1)
 }
 
+function isValidNumber(input){
+let num = Number(input.value)
+ 
+  if(num){
+    showSucces(input)
+  }else{
+    showError(input, `Phone must be a number` )
+  }
+}
 
+function checkLenth(input,min,max){
+value = input.value
+if(value.trim().length < min){
+  showError(input, `${capItemId(input)} must pe minimum ${min} characters long` )
+}else if(value.trim().length > max){
+  showError(input, `${capItemId(input)} must pe maximum ${max} characters long` )
+}else{
+  showSucces(input)
+}
 
+}
 
 /**************************
   Event listers
  **************************/
 form.addEventListener("submit",function(e){
   e.preventDefault();
-  
- checkPresence([email,number,password]);
  isValidEmail(email)
+ checkPresence([email,number,password]);
+ isValidNumber(number)
+ checkLenth(password,6,20)
 });
