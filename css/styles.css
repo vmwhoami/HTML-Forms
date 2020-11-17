@@ -249,11 +249,14 @@ form {
 .form_field {
   position: relative;
 }
-.form_field > small {
+.form_field small {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--error);
   position: absolute;
   bottom: 0;
   left: 0;
   visibility: hidden;
+}
+.form_field.error small {
+  visibility: visible;
 }
